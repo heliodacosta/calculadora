@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+
+<body>
+    <div id="calc">
+        <h2>Calculadora</h2>
+
+        <div id="operations">
+            <div id="current-operation"></div>
+        </div>
+
+        <div id="buttons-container">
+            <button onclick="cle()">CE</button>
+            <button onclick="cle()">C</button>
+            <button onclick="back()">DEL</button>
+            <button onclick="numero('/')">/</button>
+            <button class="number" onclick="numero(7)">7</button>
+            <button class="number" onclick="numero(8)">8</button>
+            <button class="number" onclick="numero(9)">9</button>
+            <button onclick="numero('*')">*</button>
+            <button class="number" onclick="numero(4)">4</button>
+            <button class="number" onclick="numero(5)">5</button>
+            <button class="number" onclick="numero(6)">6</button>
+            <button onclick="numero('-')">-</button>
+            <button class="number" onclick="numero(1)">1</button>
+            <button class="number" onclick="numero(2)">2</button>
+            <button class="number" onclick="numero(3)">3</button>
+            <button onclick="numero('+')">+</button>
+            <button class="number" onclick="numero(0)">0 </button>
+            <button class="number" onclick="numero('.')">.</button>
+            <button id="equal-btr" onclick="calcular()">=</button>
+        </div>
+    </div>
+  <script src="src/script.js"></script>
+</body>
+
+</html>
